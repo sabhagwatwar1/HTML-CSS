@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <title>Contact Form</title>
+    <!-- Design Part -->
+    <style>
+        * {
+            font-family: 'Zen Kurenaido', sans-serif;
+        }
+
+        .nav {
+            border: 1px solid black;
+            display: flex;
+            border-radius: 5px;
+            background-color: black;
+            flex-direction: row-reverse;
+            position:sticky;
+            /* padding: 10px; */
+            /* margin: 10px; */
+
+        }
+
+        .lis {
+            list-style: none;
+            padding: 10px;
+            margin-left: 100px;
+
+        }
+
+        .lis a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            /* font-weight: bold; */
+        }
+
+        .lis a:hover {
+            color: red;
+        }
+
+        .leg {
+            font-size: 40px;
+        }
+        .con
+        {
+            padding: 30px ;
+        }
+        .btn
+        {
+            background-color: black;
+            color: #fff;
+            font-size: 15px;
+            padding: 9px 9px;
+            border-radius: 5px;
+            margin-left: 14%;
+            width: 150px;    
+        }
+        #fname{
+            width: 40%;
+            /* border-radius: 3px;
+            outline: 0; */
+        }
+        #lname
+        {
+            width: 40%;
+        }
+        #email
+        {
+            width: 40%;
+        }
+        .msg
+        {
+            width: 40%;
+        }
+        form{
+        background-image: url("denys-nevozhai-_QoAuZGAoPY-unsplash.jpg");
+        }
+    </style>
+</head>
+<!-- Body part -->
+
+<body>
+    <header>
+        <div class="head">
+            <ul class="nav">
+                <li class="lis"><a href="">Contact </a></li>
+                <li class="lis"><a href="">About Us</a></li>
+                <li class="lis"><a href="">Services</a></li>
+                <li class="lis"><a href="">Home</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <form action="" class="con">
+            <fieldset class="con">
+                <legend class="leg">
+                    Contact Form
+
+                </legend>
+                <label for="fname">Name:</label>
+                <p class="field">
+                    <input type="text" name="fname" id="fname">
+                </p>
+                <label for="lname">Lastname:</label>
+                <p class="field">
+                    <input type="text" name="lname" id="lname">
+                </p>
+                <label for="email">Email:</label>
+                <p class="field">
+                    <input type="email" name="email" id="email">
+                </p>
+                <label for="msg">Message:</label>
+                <p class="field">
+                    <textarea name="msg" id="textar" cols="30" rows="10" class="msg"></textarea>
+                </p>
+                <input type="button" value="Submit" class="btn">
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
